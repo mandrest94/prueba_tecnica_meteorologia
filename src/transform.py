@@ -185,6 +185,11 @@ def validate_dataframe(df):
         df["date"].max()
     )
 
+    #Ciudades
+    validation_results["cities"] = (
+        df["city"].nunique()
+    )
+
     return validation_results
 
 
