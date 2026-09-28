@@ -1,0 +1,10 @@
+services:
+  meteorologia_pipeline:
+    build: .
+    container_name: meteorologia_pipeline
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config
+    environment:
+      - TZ=America/Bogota
+    command: python -m src.extract
