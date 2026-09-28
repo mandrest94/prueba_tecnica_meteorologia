@@ -4,3 +4,4 @@ pyyaml
 pyarrow
 duckdb
 pytest
+matplotlib
